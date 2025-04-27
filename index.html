@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Jogo Matrix: Conotação vs Denotação</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="matrix-bg"></canvas>
+  <div id="menu" class="centered">
+    <button id="btn-jogar">Jogar</button>
+    <button id="btn-ajuda">Instruções</button>
+    <button id="btn-creditos">Créditos</button>
+  </div>
+  <div id="game" class="centered hidden">
+    <h2>Jogo: Conotação vs Denotação</h2>
+    <div id="pontuacao">Pontuação: 0</div>
+    <div id="timer-bar-container">
+      <div id="timer-bar"></div>
+    </div>
+    <div id="botoes-conot-denot">
+      <button id="btn-conotacao">Conotação</button>
+      <button id="btn-denotacao">Denotação</button>
+    </div>
+    <div id="pergunta"></div>
+    <button id="btn-sair-jogo">Sair</button>
+  </div>
+  <div id="ajuda" class="centered hidden">
+    <h2>Instruções</h2>
+    <div id="regras">
+      <p>
+        <b>Regras do Jogo:</b><br><br>
+        • Frases aparecerão na tela.<br>
+        • Você deve decidir se o sentido da frase é de <b>conotação</b> (sentido figurado) ou <b>denotação</b> (sentido literal).<br>
+        • Clique no botão correspondente à sua resposta.<br>
+        • Cada resposta correta vale <b>+1 ponto</b>.<br>
+        • Cada resposta errada ou se o tempo acabar vale <b>-1 ponto</b>.<br>
+        • Você tem 30 segundos para responder cada frase (a barra diminui conforme o tempo passa).<br>
+        • Clique em "Sair" para voltar ao menu principal.<br>
+      </p>
+    </div>
+    <button id="btn-voltar-ajuda">Voltar ao Menu</button>
+  </div>
+  <div id="creditos" class="centered hidden">
+    <h2>Créditos</h2>
+    <div id="creditos-content">
+      <p>
+        Jogo Criado e programado por <b>Henrique</b><br>
+        Design gráfico por <b>Agatha</b><br>
+        Ideia e ajuda de <b>Sharon</b> e <b>Sheley</b><br>
+        <b>Obrigado por jogar! <3</b><br>
+      </p>
+    </div>
+    <button id="btn-voltar-creditos">Voltar ao Menu</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
